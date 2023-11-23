@@ -1,0 +1,131 @@
+* {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 36px 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+    background: #121212;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    width: 100%;
+}
+
+.form__input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #BB86FC;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgba(255, 255, 255, 0.87);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: rgba(255, 255, 255, 0.87);
+}
+:-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: rgba(255, 255, 255, 0.87);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.form__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.form__btn {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form__btn:hover {
+    opacity: .7;
+}
+
+#button-submit {
+    background: #6200EE;
+    border: none;
+    cursor: pointer;
+}
+
+#button-link {
+    text-align: center;
+    text-decoration: none;
+    background: #3700B3;
+}
+
+.login-wrapper {
+    gap: 53px;
+    padding-bottom: 66px;
+}
+
+.login-inputs {
+    gap: 18px;
+}
+
+.login-input {
+    border-radius: 20px;
+}
+
+.login-form {
+    gap: 56px;
+}
+
+#login-submit {
+    width: 153px;
+    border: none;
+    cursor: pointer;
+    background: #BB86FC;
+    color: rgba(0, 0, 0, 0.87);
+    text-transform: uppercase;
+}
+
+.login-btn {
+    align-items: center;
+}
+
+@media (max-width: 620px) {
+    .wrapper {
+        width: 90%;
+    }
+}

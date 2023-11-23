@@ -1,0 +1,114 @@
+.container {
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 900px;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#todo-input {
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+button {
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: teal;
+    color: #fff;
+}
+
+li {
+    position: relative;
+    list-style-type: none;
+}
+
+.li-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #2c2c2c;
+    padding: 4px;
+    border-radius: 4px;
+
+}
+
+
+.todo-form {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.todo-list {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.radio-show:checked + ul {
+    display: block;
+}
+
+.radio-hidden:checked + ul {
+    display: none;
+}
+
+.checkbox:checked + label {
+	text-decoration: line-through;
+}
+
+.buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button-tultipe {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .7s ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 27px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(97, 238, 238);
+    z-index: 2;
+}
+
+.button-wrapper:hover .button-tultipe {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+.message {
+    border: 1px solid #2c2c2c;
+    padding: 4px;
+    border-radius: 4px;
+    display: none;
+}
+
+
+

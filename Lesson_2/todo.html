@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todo.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="todo-form">
+            <form>
+                <div>
+                    <label for="todo-input">Текст задачи:</label>
+                    <input id="todo-input" type="text" placeholder="Текст задачи">
+                </div>
+                <div>
+                    <label for="todo-select">Статус</label>
+                    <select id="todo-select">
+                        <option value="Выполнено">Выполнено</option>
+                        <option value="Не выполнено">Не выполнено</option>
+    
+                    </select>
+                </div>
+                <div class="button-box">
+                    <button type="submit">Создать</button>
+                </div>
+    
+            </form>
+        </div>
+        <div class="todo-list">
+                <label for="radio1" class="todo-list__radio-label">Показать задачи  
+                </label>
+                <input id="radio1" name="visible-todos" class="radio-show" type="radio" checked>
+                <label for="radio2" class="todo-list__radio-label">Скрыть задачи  
+                </label>
+                <input id="radio2" name="visible-todos"  class="radio-hidden" type="radio">
+
+            <ul>
+                <li>
+                    <div class="li-wrapper">
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox">Текст заметки</label>
+                        </div>
+                        <div class="buttons">
+                            <div class="button-wrapper">
+                                <button>Редактировать задачу</button>
+                                <div class="button-tultipe">Внести изменения</div>
+                            </div>
+                            <div class="button-wrapper">
+                                <button>Удалить задачу</button>
+                                <div class="button-tultipe">Удалить заметку безвозвратно</div>
+    
+                            </div>
+                        </div>
+    
+
+                    </div>
+                    <div class="message">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti quam temporibus officia ipsum laudantium eius tempora voluptate odio pariatur quisquam libero, nostrum assumenda, repellendus exercitationem doloribus, dolore cum? Impedit.
+                    </div>
+    
+                </li>
+
+                <li>
+                    <div class="li-wrapper">
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            <label for="checkbox">Текст заметки</label>
+                        </div>
+                        <div class="buttons">
+                            <div class="button-wrapper">
+                                <button>Редактировать задачу</button>
+                                <div class="button-tultipe">Внести изменения</div>
+                            </div>
+                            <div class="button-wrapper">
+                                <button>Удалить задачу</button>
+                                <div class="button-tultipe">Удалить заметку безвозвратно</div>
+    
+                            </div>
+                        </div>
+    
+
+                    </div>
+                    <div class="message">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deleniti quam temporibus officia ipsum laudantium eius tempora voluptate odio pariatur quisquam libero, nostrum assumenda, repellendus exercitationem doloribus, dolore cum? Impedit.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
