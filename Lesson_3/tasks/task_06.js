@@ -24,6 +24,7 @@ console.log(myLanguages({"C++": 50, "ASM": 10, "Haskell": 20}))
 
 
 
+ 
 
 
 
