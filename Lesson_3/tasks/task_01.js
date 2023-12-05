@@ -22,7 +22,7 @@ function reverseString(str) {
     // return result.join('')
 }
 
-console.log(reverseString('123'))
+console.log(reverseString('123')) 
 
 
 

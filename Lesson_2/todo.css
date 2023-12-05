@@ -110,5 +110,12 @@ ul {
     display: none;
 }
 
+.big-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
 
-
+.big-checkbox:checked + .message {
+    display: block;
+}

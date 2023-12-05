@@ -7,12 +7,14 @@
 // runLengthEncoding("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb")
 //  // => [[34,'a'], [3,'b']]
 function runLengthEncoding(str) {
-  let arr = Array.from(new Set(str), n => [ n, str.split(n).length - 1 ].reverse());
-  return arr;
-
+  let regexp = /(.)\1*/g;
+  let arr = str.match(regexp) || [];
+  return arr.map(function(i) {
+    return [i.charAt(0), i.length].reverse();
+  });
 }
 
-console.log(runLengthEncoding("WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWBWWWWWWWWWWWWWW"))
+console.log(runLengthEncoding("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb"))
 
 
 
@@ -21,6 +23,7 @@ console.log(runLengthEncoding("WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWW
 
 
 
+ 
 
 
 
