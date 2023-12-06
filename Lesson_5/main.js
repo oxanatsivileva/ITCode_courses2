@@ -111,7 +111,7 @@ buttons.addEventListener('click', async function (event) {
       } else if (event.target.id === 'users') { 
         getUsers()
       } else {
-      hideSelect()
+      return;
     }
 });
 
